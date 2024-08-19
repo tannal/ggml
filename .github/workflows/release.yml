@@ -113,7 +113,7 @@ jobs:
     - name: Package Library
       run: |
         mkdir -p ggml-lib
-        cp build/libggml.* ggml-lib/
+        cp build/src/libggml.* ggml-lib/
         tar -czvf ggml-lib-${{ matrix.os }}.tar.gz ggml-lib
 
     - name: Upload Artifact
